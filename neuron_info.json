@@ -1,0 +1,13 @@
+{
+  "name": "Weather",
+  "raw_name": "weather",
+  "routes": [
+    {
+      "url": "/weather",
+      "name": "Weather",
+      "default": "true",
+      "raw": "weather",
+      "icon": "fa fa-weather"
+    }
+  ]
+}
