@@ -93,7 +93,7 @@ export function TodayWidgetComponent({ user, getTodayFunc, weather, deleteWidget
         {weather && (
           <div>
             <div className="center">
-              <Img
+              <WeatherImg
                 alt="Weather"
                 src={weather.todayWeather.currently && getImg(weather.todayWeather.currently.icon)}
               />
