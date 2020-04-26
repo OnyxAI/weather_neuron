@@ -649,7 +649,7 @@ function TodayWidgetComponent(_ref4) {
     title: /*#__PURE__*/react_default().createElement(lib.FormattedMessage, messages.header)
   }, void 0, weather && _jsx("div", {}, void 0, _jsx("div", {
     className: "center"
-  }, void 0, _jsx(Img, {
+  }, void 0, _jsx(WeatherImg, {
     alt: "Weather",
     src: weather.todayWeather.currently && getImg(weather.todayWeather.currently.icon)
   })), _jsx("h1", {
