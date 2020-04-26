@@ -65,7 +65,7 @@ export function Weather({ user, getTokenFunc, getTodayFunc, setTokenFunc, change
             <h1><FormattedMessage {...messages.today} /></h1>
 
             <div className="center">
-              <Img
+              <WeatherImg
                 alt="Weather"
                 src={weather.todayWeather.currently && getImg(weather.todayWeather.currently.icon)}
               />
@@ -107,7 +107,7 @@ export function TodayWidgetComponent({ user, getTodayFunc, weather, deleteWidget
   );
 }
 
-const Img = styled.img`
+const WeatherImg = styled.img`
   width: 100px;
   height: 100px;
 `;
