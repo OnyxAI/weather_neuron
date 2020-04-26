@@ -47,7 +47,7 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"?9a3c\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nPromise.all(/*! import() */[__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_react-helmet_lib_Helmet_js-node_modules-aa5762\"), __webpack_require__.e(\"index_js-_12600\")]).then(__webpack_require__.bind(__webpack_require__, /*! ./index.js */ \"./index.js\"));\n\n//# sourceURL=webpack://weather/./bootstrap.js?");
+eval("/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"?9a3c\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nPromise.all(/*! import() */[__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_immer_dist_immer_module_js-node_modules-4bf815\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"index_js-_12600\")]).then(__webpack_require__.bind(__webpack_require__, /*! ./index.js */ \"./index.js\"));\n\n//# sourceURL=webpack://weather/./bootstrap.js?");
 
 /***/ }),
 
@@ -445,6 +445,34 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 
 eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./node_modules/webpack/hot sync ^\\\\.\\\\/log$\";\n\n//# sourceURL=webpack://weather/./node_modules/webpack/hot_sync_nonrecursive_^\\.\\/log$?");
 
+/***/ }),
+
+/***/ "container-reference/onyx":
+/*!***********************!*\
+  !*** external "onyx" ***!
+  \***********************/
+/*! unknown exports (runtime-defined) */
+/*! exports [maybe provided (runtime-defined)] [maybe used (runtime-defined)] */
+/*! runtime requirements: module */
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = onyx;\n\n//# sourceURL=webpack://weather/external_%22onyx%22?");
+
+/***/ }),
+
+/***/ "?599b":
+/*!************************************************!*\
+  !*** remote override container-reference/onyx ***!
+  \************************************************/
+/*! unknown exports (runtime-defined) */
+/*! exports [maybe provided (runtime-defined)] [maybe used (runtime-defined)] */
+/*! runtime requirements: module, __webpack_require__, __webpack_require__.e, __webpack_require__.* */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("var external = __webpack_require__(\"container-reference/onyx\");\nexternal.override(Object.assign({\n\t\"react\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?9a3c\")\n\t\t})\n\t},\n\t\"react-dom\": () => {\n\t\treturn __webpack_require__.e(\"-_06d7\").then(() => {\n\t\t\treturn () => __webpack_require__(\"?06d7\")\n\t\t})\n\t},\n\t\"react-intl\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?244e\")\n\t\t})\n\t},\n\t\"react-redux\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?1277\")\n\t\t})\n\t},\n\t\"redux\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?3edc\")\n\t\t})\n\t},\n\t\"reselect\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?fdf0\")\n\t\t})\n\t},\n\t\"react-materialize\": () => {\n\t\treturn __webpack_require__.e(\"-_58b7\").then(() => {\n\t\t\treturn () => __webpack_require__(\"?58b7\")\n\t\t})\n\t},\n\t\"materialize-css\": () => {\n\t\treturn __webpack_require__.e(\"-_f292\").then(() => {\n\t\t\treturn () => __webpack_require__(\"?f292\")\n\t\t})\n\t}\n}, __webpack_require__.O));\nmodule.exports = external;\n\n//# sourceURL=webpack://weather/remote_override_container-reference/onyx?");
+
 /***/ })
 
 /******/ 	});
@@ -537,6 +565,21 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 		})();
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/harmony module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.hmd = (module) => {
+/******/ 			module = Object.create(module);
+/******/ 			if (!module.children) module.children = [];
+/******/ 			Object.defineProperty(module, 'exports', {
+/******/ 				enumerable: true,
+/******/ 				set: () => {
+/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
+/******/ 				}
+/******/ 			});
+/******/ 			return module;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
@@ -566,16 +609,52 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	(() => {
 /******/ 		__webpack_require__.O = {};
 /******/ 		var chunkMapping = {
-/******/ 			"index_js-_12600": [
-/******/ 				"?244e"
+/******/ 			"src_containers_Weather_index_js": [
+/******/ 				"?244e",
+/******/ 				"?1277",
+/******/ 				"?3edc",
+/******/ 				"?fdf0"
+/******/ 			],
+/******/ 			"-_06d7": [
+/******/ 				"?06d7"
+/******/ 			],
+/******/ 			"-_58b7": [
+/******/ 				"?58b7"
+/******/ 			],
+/******/ 			"-_f292": [
+/******/ 				"?f292"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToNameMapping = {
-/******/ 			"?244e": "react-intl"
+/******/ 			"?244e": "react-intl",
+/******/ 			"?1277": "react-redux",
+/******/ 			"?3edc": "redux",
+/******/ 			"?fdf0": "reselect",
+/******/ 			"?06d7": "react-dom",
+/******/ 			"?58b7": "react-materialize",
+/******/ 			"?f292": "materialize-css"
 /******/ 		};
 /******/ 		var fallbackMapping = {
 /******/ 			"?244e": () => {
 /******/ 				return __webpack_require__.e("vendors-node_modules_react-intl_lib_index_js").then(() => () => __webpack_require__("./node_modules/react-intl/lib/index.js"))
+/******/ 			},
+/******/ 			"?1277": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-redux_es_index_js").then(() => () => __webpack_require__("../../node_modules/react-redux/es/index.js"))
+/******/ 			},
+/******/ 			"?3edc": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_redux_es_redux_js").then(() => () => __webpack_require__("../../node_modules/redux/es/redux.js"))
+/******/ 			},
+/******/ 			"?fdf0": () => {
+/******/ 				return __webpack_require__.e("node_modules_reselect_es_index_js").then(() => () => __webpack_require__("../../node_modules/reselect/es/index.js"))
+/******/ 			},
+/******/ 			"?06d7": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => () => __webpack_require__("./node_modules/react-dom/index.js"))
+/******/ 			},
+/******/ 			"?58b7": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-materialize_lib_index_js").then(() => () => __webpack_require__("../../node_modules/react-materialize/lib/index.js"))
+/******/ 			},
+/******/ 			"?f292": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_materialize-css_dist_js_materialize_js").then(() => () => __webpack_require__("../../node_modules/materialize-css/dist/js/materialize.js"))
 /******/ 			}
 /******/ 		};
 /******/ 		__webpack_require__.f.overridables = (chunkId, promises) => {
@@ -594,13 +673,27 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "api/neurons/serve/weather/";
+/******/ 		__webpack_require__.p = "/api/neurons/serve/weather/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/remotes loading */
 /******/ 	(() => {
-/******/ 		var chunkMapping = {};
-/******/ 		var idToExternalAndNameMapping = {};
+/******/ 		var chunkMapping = {
+/******/ 			"src_containers_Weather_index_js": [
+/******/ 				"?3158",
+/******/ 				"?1509"
+/******/ 			]
+/******/ 		};
+/******/ 		var idToExternalAndNameMapping = {
+/******/ 			"?3158": [
+/******/ 				"?599b",
+/******/ 				"components"
+/******/ 			],
+/******/ 			"?1509": [
+/******/ 				"?599b",
+/******/ 				"utils"
+/******/ 			]
+/******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
 /******/ 			if(__webpack_require__.o(chunkMapping, chunkId)) {
 /******/ 				chunkMapping[chunkId].forEach((id) => {
@@ -635,7 +728,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(true) { // all chunks have JS
+/******/ 						if(!/^\-_(06d7|58b7|f292)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => {
 /******/ 								installedChunkData = installedChunks[chunkId] = [resolve, reject];

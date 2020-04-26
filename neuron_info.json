@@ -9,5 +9,19 @@
       "raw": "weather",
       "icon": "fa fa-weather"
     }
+  ],
+  "widgets": [
+    {
+      "beautifulName": "Weather",
+      "name": "TodayWidget",
+      "raw": "weather"
+    }
+  ],
+  "screen": [
+    {
+      "beautifulName": "Weather",
+      "name": "TodayWidget",
+      "raw": "weather"
+    }
   ]
 }

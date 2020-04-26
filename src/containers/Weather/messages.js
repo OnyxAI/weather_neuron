@@ -13,4 +13,8 @@ export default defineMessages({
     id: `${scope}.header`,
     defaultMessage: 'Weather',
   },
+  today: {
+    id: `${scope}.today`,
+    defaultMessage: 'Today',
+  },
 });
