@@ -110,7 +110,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         Weather: './index.js',
-        TodayWidget: './today_widget.js',
+        TodayWeatherWidget: './today_widget.js',
         i18n: './src/i18n.js'
       },
       remotes: {

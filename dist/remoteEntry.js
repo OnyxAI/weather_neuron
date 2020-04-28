@@ -1,97 +1,52 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is not neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 var weather;weather =
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 549:
+/***/ "?d097":
+/*!***********************!*\
+  !*** container entry ***!
+  \***********************/
+/*! unknown exports (runtime-defined) */
+/*! exports [maybe provided (runtime-defined)] [maybe used (runtime-defined)] */
+/*! runtime requirements: __webpack_require__.d, __webpack_require__.o, __webpack_exports__, __webpack_require__.e, __webpack_require__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-var moduleMap = {
-	"Weather": () => {
-		return Promise.all([__webpack_require__.e(317), __webpack_require__.e(983), __webpack_require__.e(801), __webpack_require__.e(536)]).then(() => () => __webpack_require__(1045));
-	},
-	"TodayWidget": () => {
-		return Promise.all([__webpack_require__.e(317), __webpack_require__.e(983), __webpack_require__.e(801), __webpack_require__.e(42)]).then(() => () => __webpack_require__(7042));
-	},
-	"i18n": () => {
-		return __webpack_require__.e(596).then(() => () => __webpack_require__(2596));
-	}
-};
-var get = (module) => {
-	return (
-		__webpack_require__.o(moduleMap, module)
-			? moduleMap[module]()
-			: Promise.resolve().then(() => {
-				throw new Error("Module " + module + " does not exist in container.");
-			})
-	);
-};
-var override = (override) => {
-	Object.assign(__webpack_require__.O, override);
-}
-
-// This exports getters to disallow modifications
-__webpack_require__.d(exports, {
-	get: () => get,
-	override: () => override
-});
+eval("var moduleMap = {\n\t\"Weather\": () => {\n\t\treturn Promise.all([__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_immer_dist_immer_module_js-node_modules-4bf815\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"-_9a3c\"), __webpack_require__.e(\"index_js-_12601\")]).then(() => () => __webpack_require__(/*! ./index.js */ \"./index.js\"));\n\t},\n\t\"TodayWeatherWidget\": () => {\n\t\treturn Promise.all([__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_immer_dist_immer_module_js-node_modules-4bf815\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"-_9a3c\"), __webpack_require__.e(\"today_widget_js\")]).then(() => () => __webpack_require__(/*! ./today_widget.js */ \"./today_widget.js\"));\n\t},\n\t\"i18n\": () => {\n\t\treturn __webpack_require__.e(\"src_i18n_js\").then(() => () => __webpack_require__(/*! ./src/i18n.js */ \"./src/i18n.js\"));\n\t}\n};\nvar get = (module) => {\n\treturn (\n\t\t__webpack_require__.o(moduleMap, module)\n\t\t\t? moduleMap[module]()\n\t\t\t: Promise.resolve().then(() => {\n\t\t\t\tthrow new Error(\"Module \" + module + \" does not exist in container.\");\n\t\t\t})\n\t);\n};\nvar override = (override) => {\n\tObject.assign(__webpack_require__.O, override);\n}\n\n// This exports getters to disallow modifications\n__webpack_require__.d(exports, {\n\tget: () => get,\n\toverride: () => override\n});\n\n//# sourceURL=webpack://weather/container_entry?");
 
 /***/ }),
 
-/***/ 3626:
+/***/ "container-reference/onyx":
+/*!***********************!*\
+  !*** external "onyx" ***!
+  \***********************/
+/*! unknown exports (runtime-defined) */
+/*! exports [maybe provided (runtime-defined)] [maybe used (runtime-defined)] */
+/*! runtime requirements: module */
 /***/ ((module) => {
 
-module.exports = onyx;
+eval("module.exports = onyx;\n\n//# sourceURL=webpack://weather/external_%22onyx%22?");
 
 /***/ }),
 
-/***/ 5679:
+/***/ "?599b":
+/*!************************************************!*\
+  !*** remote override container-reference/onyx ***!
+  \************************************************/
+/*! unknown exports (runtime-defined) */
+/*! exports [maybe provided (runtime-defined)] [maybe used (runtime-defined)] */
+/*! runtime requirements: module, __webpack_require__, __webpack_require__.e, __webpack_require__.* */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var external = __webpack_require__(3626);
-external.override(Object.assign({
-	"react": () => {
-		return Promise.resolve().then(() => {
-			return () => __webpack_require__(1801)
-		})
-	},
-	"react-dom": () => {
-		return __webpack_require__.e(634).then(() => {
-			return () => __webpack_require__(634)
-		})
-	},
-	"react-intl": () => {
-		return Promise.resolve().then(() => {
-			return () => __webpack_require__(4788)
-		})
-	},
-	"react-redux": () => {
-		return Promise.resolve().then(() => {
-			return () => __webpack_require__(4499)
-		})
-	},
-	"redux": () => {
-		return Promise.resolve().then(() => {
-			return () => __webpack_require__(5317)
-		})
-	},
-	"reselect": () => {
-		return Promise.resolve().then(() => {
-			return () => __webpack_require__(2103)
-		})
-	},
-	"react-materialize": () => {
-		return __webpack_require__.e(993).then(() => {
-			return () => __webpack_require__(993)
-		})
-	},
-	"materialize-css": () => {
-		return __webpack_require__.e(122).then(() => {
-			return () => __webpack_require__(2122)
-		})
-	}
-}, __webpack_require__.O));
-module.exports = external;
+eval("var external = __webpack_require__(\"container-reference/onyx\");\nexternal.override(Object.assign({\n\t\"react\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?9a3c\")\n\t\t})\n\t},\n\t\"react-dom\": () => {\n\t\treturn __webpack_require__.e(\"-_06d7\").then(() => {\n\t\t\treturn () => __webpack_require__(\"?06d7\")\n\t\t})\n\t},\n\t\"react-intl\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?244e\")\n\t\t})\n\t},\n\t\"react-redux\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?1277\")\n\t\t})\n\t},\n\t\"redux\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?3edc\")\n\t\t})\n\t},\n\t\"reselect\": () => {\n\t\treturn Promise.resolve().then(() => {\n\t\t\treturn () => __webpack_require__(\"?fdf0\")\n\t\t})\n\t},\n\t\"react-materialize\": () => {\n\t\treturn __webpack_require__.e(\"-_58b7\").then(() => {\n\t\t\treturn () => __webpack_require__(\"?58b7\")\n\t\t})\n\t},\n\t\"materialize-css\": () => {\n\t\treturn __webpack_require__.e(\"-_f292\").then(() => {\n\t\t\treturn () => __webpack_require__(\"?f292\")\n\t\t})\n\t}\n}, __webpack_require__.O));\nmodule.exports = external;\n\n//# sourceURL=webpack://weather/remote_override_container-reference/onyx?");
 
 /***/ })
 
@@ -220,59 +175,59 @@ module.exports = external;
 /******/ 	(() => {
 /******/ 		__webpack_require__.O = {};
 /******/ 		var chunkMapping = {
-/******/ 			"122": [
-/******/ 				2122
+/******/ 			"src_containers_Weather_index_js": [
+/******/ 				"?244e",
+/******/ 				"?1277",
+/******/ 				"?3edc",
+/******/ 				"?fdf0"
 /******/ 			],
-/******/ 			"634": [
-/******/ 				634
+/******/ 			"-_9a3c": [
+/******/ 				"?9a3c"
 /******/ 			],
-/******/ 			"801": [
-/******/ 				1801
+/******/ 			"-_06d7": [
+/******/ 				"?06d7"
 /******/ 			],
-/******/ 			"983": [
-/******/ 				4788,
-/******/ 				4499,
-/******/ 				5317,
-/******/ 				2103
+/******/ 			"-_58b7": [
+/******/ 				"?58b7"
 /******/ 			],
-/******/ 			"993": [
-/******/ 				993
+/******/ 			"-_f292": [
+/******/ 				"?f292"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToNameMapping = {
-/******/ 			"634": "react-dom",
-/******/ 			"993": "react-materialize",
-/******/ 			"1801": "react",
-/******/ 			"2103": "reselect",
-/******/ 			"2122": "materialize-css",
-/******/ 			"4499": "react-redux",
-/******/ 			"4788": "react-intl",
-/******/ 			"5317": "redux"
+/******/ 			"?244e": "react-intl",
+/******/ 			"?1277": "react-redux",
+/******/ 			"?3edc": "redux",
+/******/ 			"?fdf0": "reselect",
+/******/ 			"?9a3c": "react",
+/******/ 			"?06d7": "react-dom",
+/******/ 			"?58b7": "react-materialize",
+/******/ 			"?f292": "materialize-css"
 /******/ 		};
 /******/ 		var fallbackMapping = {
-/******/ 			4788: () => {
-/******/ 				return __webpack_require__.e(965).then(() => () => __webpack_require__(965))
+/******/ 			"?244e": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-intl_lib_index_js").then(() => () => __webpack_require__("./node_modules/react-intl/lib/index.js"))
 /******/ 			},
-/******/ 			4499: () => {
-/******/ 				return __webpack_require__.e(667).then(() => () => __webpack_require__(8667))
+/******/ 			"?1277": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-redux_es_index_js").then(() => () => __webpack_require__("../../node_modules/react-redux/es/index.js"))
 /******/ 			},
-/******/ 			5317: () => {
-/******/ 				return __webpack_require__.e(717).then(() => () => __webpack_require__(8717))
+/******/ 			"?3edc": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_redux_es_redux_js").then(() => () => __webpack_require__("../../node_modules/redux/es/redux.js"))
 /******/ 			},
-/******/ 			2103: () => {
-/******/ 				return __webpack_require__.e(985).then(() => () => __webpack_require__(985))
+/******/ 			"?fdf0": () => {
+/******/ 				return __webpack_require__.e("node_modules_reselect_es_index_js").then(() => () => __webpack_require__("../../node_modules/reselect/es/index.js"))
 /******/ 			},
-/******/ 			1801: () => {
-/******/ 				return __webpack_require__.e(294).then(() => () => __webpack_require__(7294))
+/******/ 			"?9a3c": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react_index_js").then(() => () => __webpack_require__("./node_modules/react/index.js"))
 /******/ 			},
-/******/ 			634: () => {
-/******/ 				return __webpack_require__.e(935).then(() => () => __webpack_require__(3935))
+/******/ 			"?06d7": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => () => __webpack_require__("./node_modules/react-dom/index.js"))
 /******/ 			},
-/******/ 			993: () => {
-/******/ 				return __webpack_require__.e(306).then(() => () => __webpack_require__(4306))
+/******/ 			"?58b7": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-materialize_lib_index_js").then(() => () => __webpack_require__("../../node_modules/react-materialize/lib/index.js"))
 /******/ 			},
-/******/ 			2122: () => {
-/******/ 				return __webpack_require__.e(692).then(() => () => __webpack_require__(7692))
+/******/ 			"?f292": () => {
+/******/ 				return __webpack_require__.e("vendors-node_modules_materialize-css_dist_js_materialize_js").then(() => () => __webpack_require__("../../node_modules/materialize-css/dist/js/materialize.js"))
 /******/ 			}
 /******/ 		};
 /******/ 		__webpack_require__.f.overridables = (chunkId, promises) => {
@@ -297,19 +252,19 @@ module.exports = external;
 /******/ 	/* webpack/runtime/remotes loading */
 /******/ 	(() => {
 /******/ 		var chunkMapping = {
-/******/ 			"983": [
-/******/ 				7318,
-/******/ 				6749
+/******/ 			"src_containers_Weather_index_js": [
+/******/ 				"?3158",
+/******/ 				"?1509"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToExternalAndNameMapping = {
-/******/ 			"6749": [
-/******/ 				5679,
-/******/ 				"utils"
-/******/ 			],
-/******/ 			"7318": [
-/******/ 				5679,
+/******/ 			"?3158": [
+/******/ 				"?599b",
 /******/ 				"components"
+/******/ 			],
+/******/ 			"?1509": [
+/******/ 				"?599b",
+/******/ 				"utils"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -333,7 +288,7 @@ module.exports = external;
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			261: 0
+/******/ 			"weather": 0
 /******/ 		};
 /******/ 		
 /******/ 		
@@ -346,7 +301,7 @@ module.exports = external;
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^(122|634|801|993)$/.test(chunkId)) {
+/******/ 						if(!/^\-_(06d7|58b7|9a3c|f292)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => {
 /******/ 								installedChunkData = installedChunks[chunkId] = [resolve, reject];
@@ -454,6 +409,6 @@ module.exports = external;
 /******/ 	// module factories are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(549);
+/******/ 	return __webpack_require__("?d097");
 /******/ })()
 ;

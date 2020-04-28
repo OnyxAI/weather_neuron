@@ -87,7 +87,7 @@ export function* loadSetToken() {
 }
 
 // Individual exports for testing
-export default function* calendarSaga() {
+export default function* weatherSaga() {
   yield takeLatest(GET_TOKEN, loadGetToken);
   yield takeLatest(GET_TODAY, loadTodayWeather);
   yield takeLatest(SET_TOKEN, loadSetToken);

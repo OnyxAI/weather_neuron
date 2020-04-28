@@ -79,7 +79,7 @@ export function Weather({ user, getTokenFunc, getTodayFunc, setTokenFunc, change
   );
 }
 
-export function TodayWidgetComponent({ user, getTodayFunc, weather, deleteWidget }) {
+export function TodayWidgetComponent({ user, getTodayFunc, weather }) {
   useInjectReducer({ key: 'weather', reducer });
   useInjectSaga({ key: 'weather', saga });
 
@@ -89,7 +89,6 @@ export function TodayWidgetComponent({ user, getTodayFunc, weather, deleteWidget
 
   return (
     <div>
-      <Widget delete={() => deleteWidget()} title={<FormattedMessage {...messages.header} />}>
         {weather && (
           <div>
             <div className="center">
@@ -102,7 +101,6 @@ export function TodayWidgetComponent({ user, getTodayFunc, weather, deleteWidget
             <h1 style={{fontSize: '50px'}} className="center">{weather.todayWeather.currently && Math.round(weather.todayWeather.currently.temperature)} °C</h1>
           </div>
         )}
-      </Widget>
     </div>
   );
 }

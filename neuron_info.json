@@ -14,6 +14,7 @@
     {
       "beautifulName": "Weather",
       "name": "TodayWeatherWidget",
+      "defaultLayout": { "x": 0, "y": 0, "w": 2, "h": 10, "minW": 2, "minH": 4 },
       "raw": "weather"
     }
   ],
@@ -21,6 +22,7 @@
     {
       "beautifulName": "Weather",
       "name": "TodayWeatherWidget",
+      "defaultLayout": { "x": 0, "y": 0, "w": 2, "h": 10, "minW": 2, "minH": 4 },
       "raw": "weather"
     }
   ]
