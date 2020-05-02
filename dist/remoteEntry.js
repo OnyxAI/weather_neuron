@@ -20,7 +20,7 @@ var weather;weather =
 /*! runtime requirements: __webpack_require__.d, __webpack_require__.o, __webpack_exports__, __webpack_require__.e, __webpack_require__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("var moduleMap = {\n\t\"Weather\": () => {\n\t\treturn Promise.all([__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_immer_dist_immer_module_js-node_modules-4bf815\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"-_9a3c\"), __webpack_require__.e(\"index_js-_12601\")]).then(() => () => __webpack_require__(/*! ./index.js */ \"./index.js\"));\n\t},\n\t\"TodayWeatherWidget\": () => {\n\t\treturn Promise.all([__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_immer_dist_immer_module_js-node_modules-4bf815\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"-_9a3c\"), __webpack_require__.e(\"today_widget_js\")]).then(() => () => __webpack_require__(/*! ./today_widget.js */ \"./today_widget.js\"));\n\t},\n\t\"i18n\": () => {\n\t\treturn __webpack_require__.e(\"src_i18n_js\").then(() => () => __webpack_require__(/*! ./src/i18n.js */ \"./src/i18n.js\"));\n\t}\n};\nvar get = (module) => {\n\treturn (\n\t\t__webpack_require__.o(moduleMap, module)\n\t\t\t? moduleMap[module]()\n\t\t\t: Promise.resolve().then(() => {\n\t\t\t\tthrow new Error(\"Module \" + module + \" does not exist in container.\");\n\t\t\t})\n\t);\n};\nvar override = (override) => {\n\tObject.assign(__webpack_require__.O, override);\n}\n\n// This exports getters to disallow modifications\n__webpack_require__.d(exports, {\n\tget: () => get,\n\toverride: () => override\n});\n\n//# sourceURL=webpack://weather/container_entry?");
+eval("var moduleMap = {\n\t\"Weather\": () => {\n\t\treturn Promise.all([__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_css-loader_dist_runtime_api_js-node_mod-488265\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"-_9a3c\"), __webpack_require__.e(\"index_js-_12601\")]).then(() => () => __webpack_require__(/*! ./index.js */ \"./index.js\"));\n\t},\n\t\"TodayWeatherWidget\": () => {\n\t\treturn Promise.all([__webpack_require__.e(\"vendors-node_modules_prop-types_index_js-node_modules_css-loader_dist_runtime_api_js-node_mod-488265\"), __webpack_require__.e(\"src_containers_Weather_index_js\"), __webpack_require__.e(\"-_9a3c\"), __webpack_require__.e(\"today_widget_js\")]).then(() => () => __webpack_require__(/*! ./today_widget.js */ \"./today_widget.js\"));\n\t},\n\t\"i18n\": () => {\n\t\treturn __webpack_require__.e(\"src_i18n_js\").then(() => () => __webpack_require__(/*! ./src/i18n.js */ \"./src/i18n.js\"));\n\t}\n};\nvar get = (module) => {\n\treturn (\n\t\t__webpack_require__.o(moduleMap, module)\n\t\t\t? moduleMap[module]()\n\t\t\t: Promise.resolve().then(() => {\n\t\t\t\tthrow new Error(\"Module \" + module + \" does not exist in container.\");\n\t\t\t})\n\t);\n};\nvar override = (override) => {\n\tObject.assign(__webpack_require__.O, override);\n}\n\n// This exports getters to disallow modifications\n__webpack_require__.d(exports, {\n\tget: () => get,\n\toverride: () => override\n});\n\n//# sourceURL=webpack://weather/container_entry?");
 
 /***/ }),
 
@@ -209,7 +209,7 @@ eval("var external = __webpack_require__(\"container-reference/onyx\");\nexterna
 /******/ 				return __webpack_require__.e("vendors-node_modules_react-intl_lib_index_js").then(() => () => __webpack_require__("./node_modules/react-intl/lib/index.js"))
 /******/ 			},
 /******/ 			"?1277": () => {
-/******/ 				return __webpack_require__.e("vendors-node_modules_react-redux_es_index_js").then(() => () => __webpack_require__("../../node_modules/react-redux/es/index.js"))
+/******/ 				return Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js-_ee79"), __webpack_require__.e("vendors-node_modules_react-redux_es_index_js")]).then(() => () => __webpack_require__("../../node_modules/react-redux/es/index.js"))
 /******/ 			},
 /******/ 			"?3edc": () => {
 /******/ 				return __webpack_require__.e("vendors-node_modules_redux_es_redux_js").then(() => () => __webpack_require__("../../node_modules/redux/es/redux.js"))
@@ -221,10 +221,10 @@ eval("var external = __webpack_require__(\"container-reference/onyx\");\nexterna
 /******/ 				return __webpack_require__.e("vendors-node_modules_react_index_js").then(() => () => __webpack_require__("./node_modules/react/index.js"))
 /******/ 			},
 /******/ 			"?06d7": () => {
-/******/ 				return __webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => () => __webpack_require__("./node_modules/react-dom/index.js"))
+/******/ 				return __webpack_require__.e("vendors-node_modules_react-dom_index_js-_8bc8").then(() => () => __webpack_require__("./node_modules/react-dom/index.js"))
 /******/ 			},
 /******/ 			"?58b7": () => {
-/******/ 				return __webpack_require__.e("vendors-node_modules_react-materialize_lib_index_js").then(() => () => __webpack_require__("../../node_modules/react-materialize/lib/index.js"))
+/******/ 				return Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js-_ee79"), __webpack_require__.e("vendors-node_modules_react-materialize_lib_index_js")]).then(() => () => __webpack_require__("../../node_modules/react-materialize/lib/index.js"))
 /******/ 			},
 /******/ 			"?f292": () => {
 /******/ 				return __webpack_require__.e("vendors-node_modules_materialize-css_dist_js_materialize_js").then(() => () => __webpack_require__("../../node_modules/materialize-css/dist/js/materialize.js"))
