@@ -64,13 +64,6 @@ export function Weather({ user, getTokenFunc, getTodayFunc, setTokenFunc, change
 
             <h1><FormattedMessage {...messages.today} /></h1>
 
-            <div className="center">
-              <WeatherImg
-                alt="Weather"
-                src={weather.todayWeather.currently && getImg(weather.todayWeather.currently.icon)}
-              />
-            </div>
-
             <h1 style={{fontSize: '50px'}} className="center">{weather.todayWeather.currently && Math.round(weather.todayWeather.currently.temperature)} °C</h1>
           </div>
         )}
